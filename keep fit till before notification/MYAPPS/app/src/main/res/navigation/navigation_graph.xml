@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_dayst">
+
+    <fragment
+        android:id="@+id/nav_dayst"
+        android:name="com.example.keepfitfinal.design.fragment.DaysFragment"
+        android:label="@string/page_title"
+        tools:layout="@layout/fragment_day_status">
+        <action
+            app:popUpToInclusive="true"
+            android:id="@+id/action_nav_dayst_to_nav_goalmgmt"
+            app:destination="@id/nav_goalmgmt" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.keepfitfinal.HistoryFragment"
+        android:label="@string/History"
+        tools:layout="@layout/fragment_history_fragment" />
+
+    <fragment
+        android:id="@+id/nav_goalmgmt"
+        android:name="com.example.keepfitfinal.GoalmgmtFragment"
+        android:label="@string/GoalMgmt"
+        tools:layout="@layout/fragment_goalmgmt_fragment" >
+        <action
+            android:id="@+id/action_nav_goalmgmt_to_addgoal"
+            app:destination="@id/addgoal" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addgoal"
+        android:name="com.example.keepfitfinal.AddGoalFragment"
+        android:label="@string/AddGoal"
+        tools:layout="@layout/fragment_addgoal_fragment" />
+
+    <fragment
+        android:id="@+id/allowrecord"
+        android:name="com.example.keepfitfinal.allowrecordHis_fragment"
+        android:label="@string/AddGoal"
+        tools:layout="@layout/fragment_allowrecord_his_fragment" />
+
+    <fragment
+        android:id="@+id/dailyhistory"
+        android:name="com.example.keepfitfinal.dailyHistory_fragment"
+        android:label="@string/DailyHistory"
+        tools:layout="@layout/fragment_daily_history_fragment" />
+
+
+</navigation>

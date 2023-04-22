@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="page_title">Keep Fit</string>
+    <string name="todaysgl">Today\'s Goal</string>
+    <string name="splasht1">Welcome to Keep Fit</string>
+    <string name="splasht2">Count your steps the cool way</string>
+    <string name="GoalMgmt">Goal Management</string>
+    <string name="EditGoal">Edit Goal</string>
+    <string name="AddGoal">Add Goal</string>
+    <string name="addmoreGoal">Add More Goal</string>
+    <string name="History">History</string>
+    <string name="AllowappToRecordhis">Allow App to Record History</string>
+    <string name="DailyHistory">Daily History</string>
+    <string name="saystatus">Day Status</string>
+    <string name="settodaysgoal">Set Todays Goal</string>
+    <string name="DayStatus_fragment">Day Status</string>
+    <string name="Goalmgmt_fragment">Goal Management</string>
+    <string name="addgoal_fragment">Add Goal</string>
+    <string name="history_fragment">History</string>
+    <string name="allowrecordHis_fragment">Enable record History</string>
+    <string name="dailyHistory_fragment">Daily History</string>
+    <string name="Setting_fragment">Settings</string>
+    <string name="Enable">Enable</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="link_toSetFragmt">Set Goal</string>
+    <string name="goal1">Goal 1</string>
+    <string name="goaldetail">Goal Details</string>
+    <string name="goal2">Goal 2</string>
+    <string name="goaldetail2">Goal Details</string>
+    <string name="recordhistory">Do you Wish to Record Your activity History</string>
+    <string name="nameofgoal">Name of the Goal</string>
+    <string name="noofsteps">Number of Steps</string>
+    <string name="goal3">goal3</string>
+<string name="date">Enter date</string>
+    <string name="paceholderdigit">2000</string>
+<string name="view">View</string>
+    <string name="update">Update</string>
+    <string name="goal_name">Goal Name</string>
+</resources>

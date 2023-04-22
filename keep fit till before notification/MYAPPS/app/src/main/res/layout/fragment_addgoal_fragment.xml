@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/themecolor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textviewrecord2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="@dimen/screen_padding"
+                android:text="@string/nameofgoal"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtGoalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="14dp"
+                android:background="#88808080"
+                android:hint="@string/goal_name"
+                android:inputType="text"
+                android:padding="@dimen/screen_padding"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/textviewrecord3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="@dimen/screen_padding"
+                android:text="@string/noofsteps"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/edtGoalSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="18dp"
+                android:background="#88808080"
+                android:hint="@string/paceholderdigit"
+                android:inputType="number"
+                android:padding="@dimen/screen_padding" />
+
+            <Button
+                android:id="@+id/btnAddGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/backgroundcrop"
+                android:ems="14"
+                android:padding="@dimen/screen_padding"
+                android:text="@string/AddGoal"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</layout>

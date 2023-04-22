@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/themecolor">
+
+        <ScrollView
+            android:id="@+id/scrollbar1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <RelativeLayout
+                android:id="@+id/whitelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/screen_padding"
+                android:background="@drawable/backgroundcrop"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toStartOf="@+id/btnEditGoal"
+                    android:fontFamily="monospace"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/todaysgl"
+                    android:textAllCaps="false"
+                    android:textColor="#f000"
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    tools:ignore="ExtraText,RtlCompat" />
+
+
+                <Button
+                    android:id="@+id/btnEditGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/screen_padding_large"
+                    android:layout_alignTop="@+id/txtGoal"
+                    android:layout_alignBottom="@+id/txtGoal"
+
+
+                    android:layout_alignParentEnd="true"
+                    android:minHeight="48dp"
+                    android:text="Edit Goal"
+                    android:textAllCaps="false"
+                    android:textColor="#F24E1E"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RelativeLayout
+                    android:id="@+id/layouttop"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/txtGoal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/backgroundcrop2"
+                    android:orientation="horizontal">
+
+
+                    <com.example.keepfitfinal.customview.ColorfulRingProgressView
+                        android:id="@+id/progress_bar"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle"
+                        android:progress="20"
+                        android:textStyle="bold"
+                        tools:visibility="visible" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnset_dgoal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/backgroundcrop"
+                        android:ems="4"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:padding="5.0dp"
+                        android:text="@string/link_toSetFragmt"
+                        android:textAllCaps="false"
+                        android:textColor="#f000"
+                        android:textSize="20.0sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/layoutbelow_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/layouttop"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/themecolor"
+                    android:orientation="vertical">
+
+
+                    <ProgressBar
+                        android:id="@+id/progress_line"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress_gradient" />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/edtNoOgSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_below="@+id/layoutbelow_set"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/rect_gray_background"
+                    android:gravity="center"
+                    android:hint="No. of steps"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:imeOptions="actionDone"
+                    android:textAllCaps="false"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnAddProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtNoOgSteps"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#F24E1E"
+                    android:text="Add Your Progress "
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</layout>

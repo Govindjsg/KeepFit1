@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/whitelayout"
+            android:layout_width="381dp"
+            android:layout_height="661dp"
+            android:layout_marginStart="@dimen/screen_padding"
+            android:layout_marginTop="@dimen/screen_padding"
+            android:layout_marginEnd="@dimen/screen_padding"
+            android:layout_marginBottom="@dimen/screen_padding"
+            android:background="@drawable/backgroundcrop"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textviewid1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="8dp"
+                android:text="@string/settodaysgoal"
+                android:textAllCaps="false"
+                android:textColor="#f000"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerDailyGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnAddNewGoal"
+                android:layout_below="@+id/textviewid1"
+                tools:listitem="@layout/row_daily_goal" />
+
+            <Button
+                android:id="@+id/btnAddNewGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:ems="16"
+                android:text="Add New Goal" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</layout>

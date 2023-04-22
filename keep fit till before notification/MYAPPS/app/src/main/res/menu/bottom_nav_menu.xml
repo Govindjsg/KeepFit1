@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_history"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:title="@string/History" />
+    <item
+        android:id="@+id/nav_dayst"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        android:title="@string/saystatus"/>
+    <item
+        android:id="@+id/nav_goalmgmt"
+        android:enabled="true"
+        android:icon="@drawable/goal_management"
+        android:title="@string/GoalMgmt"/>
+
+</menu>

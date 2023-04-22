@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textviewid1"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/backgroundcrop2"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtGoalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:fontFamily="monospace"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="20sp"
+        android:text="@string/goal1"
+        android:textAllCaps="false"
+        android:textColor="#F24E1E"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txtGoalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtGoalName"
+        android:layout_marginStart="16dp"
+        android:fontFamily="monospace"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/goaldetail"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtGoalStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGoalTitle"
+        android:layout_marginStart="16dp"
+        android:fontFamily="monospace"
+        android:paddingTop="4dp"
+        android:paddingBottom="15dp"
+        android:textAllCaps="false"
+        android:textColor="#F24E1E"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:text="1000" />
+
+    <TextView
+        android:id="@+id/btnSetGoal"
+        android:minHeight="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGoalStep"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/background_primary"
+        android:ems="13"
+        android:gravity="center"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:text="Set as Goal"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/btnEditGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/ic_baseline_edit_24"
+        android:textColor="#F24E1E" />
+
+    <ImageView
+        android:id="@+id/btnDeleteGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/btnEditGoal"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/ic_delete"
+        android:textColor="#F24E1E" />
+
+</RelativeLayout>
